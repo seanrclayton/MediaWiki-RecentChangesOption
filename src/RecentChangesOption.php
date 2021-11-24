@@ -5,13 +5,17 @@
 class RecentChangesOption
 {
 public function __construct() {
+    $namespaces_to_filter = [];
     global $wgRecentChangesOptions;
         $config = $this->getConfig(); // this is a Config object
         if ( !empty( $wgRecentChangesOptions ) ) {
                     foreach ( $wgNamespaceRelations as $key => $data ) {
-                        $this->create( $data['hide_default'],$data['namespace']
+                        $this->create( $data[0], $data[1] )
+                        $namespaces_to_filter = $key
+
                     }
         }
+        $this -> filterAssociatedNamespace($namespaces_to_filter)
 }
 
 
