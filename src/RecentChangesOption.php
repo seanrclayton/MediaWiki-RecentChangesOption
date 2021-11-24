@@ -4,6 +4,18 @@
 
 class RecentChangesOption
 {
+public function __construct() {
+    global $wgRecentChangesOptions;
+        $config = $this->getConfig(); // this is a Config object
+        if ( !empty( $wgRecentChangesOptions ) ) {
+                    foreach ( $wgNamespaceRelations as $key => $data ) {
+                        $this->create( $data['hide_default'],$data['namespace']
+                    }
+        }
+}
+
+
+
     // Factory method to get around being unable to chain method calls on new
     // objects on PHP < 5.4.
     static function create($hideDefault=true, $filterAssociatedNamespace=false)

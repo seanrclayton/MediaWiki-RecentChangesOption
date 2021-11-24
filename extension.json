@@ -8,6 +8,12 @@
   "type": "other",
   "manifest_version": 1,
   "AutoloadClasses": {
-    "NamespaceRelations": "src/RecentChangesOption.php"
+    "RecentChangesOption": "src/RecentChangesOption.php"
+  },
+  "config": {
+    "RecentChangesOption": {
+      "description": "Allows to filterted namespaces.",
+      "value": []
+    }
   }
 }
