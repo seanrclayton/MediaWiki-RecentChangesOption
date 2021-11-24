@@ -1,0 +1,13 @@
+{
+  "name": "RecentChangesOption",
+  "author": "Daniel Lee Harple Sean Clayton",
+  "url": "https://www.mediawiki.org/wiki/Extension:RecentChangesOption",
+  "description": "A MediaWiki extension that adds options to manage the default visibility of certain log types or namespaces on the Recent Changes page.",
+  "version": "1.0",
+  "license-name": "MIT license. See LICENSE.txt.",
+  "type": "other",
+  "manifest_version": 1,
+  "AutoloadClasses": {
+    "NamespaceRelations": "src/RecentChangesOption.php"
+  }
+}
